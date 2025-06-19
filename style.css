@@ -1,63 +1,79 @@
+/* Reset and Base Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f1f1f1;
+  padding: 20px;
 }
 
-header {
-    background-color: #222;
-    color: #fff;
+/* Grid Container */
+.container {
+  display: grid;
+  grid-template-columns:auto auto auto;
+  gap: 20px;
+}
+
+/* Each Grid Item */
+.container > div {
+  background-color: #1f1f1f;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #333;
+  margin: 10px;
+}
+
+/* Images */
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Headings and Paragraphs */
+.container h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #ffd700;
+}
+
+.container p {
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+/*header {
+    background-color: #bdc85f;
+    color: #252424;
     padding: 20px 0;
     text-align: center;
-}
+    position: sticky;
+    display: absolute;
+     position: fixed;
+  border: 1px solid blue;
+  background-color: rgba(255,200,200,0.5);  
+  width: 300px;
+  height: 100px;}*/
 
+header {
+    background-color: #bdc85f;
+    color: #252424;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /*z-index: 1000;*/
+}
 footer {
-    background-color: #222;
-    color: #fff;
+    background-color: #b9bb4f;
+    color: #252424;
     text-align: center;
     padding: 10px 0;
     margin-top: 40px;
-}
-
-.movie-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 30px;
-}
-
-.movie-card {
-    background: #fffcfc;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 300px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.movie-card:hover {
-    transform: scale(1.05);
-}
-
-.movie-card img {
-    width: 100%;
-    height: auto;
-}
-
-.movie-card h2 {
-    padding: 15px 15px 0 15px;
-    font-size: 1.4em;
-}
-
-.movie-card p {
-    padding: 10px 15px 20px 15px;
-    font-size: 0.95em;
 }
