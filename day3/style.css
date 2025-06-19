@@ -40,6 +40,11 @@ button {
   transition: background-color 0.3s ease;
 }
 
+#game button:hover {
+  background-color: #7f867f;
+  transform: scale(1.25);
+}
+
 /* Result Box */
 #result {
   font-size: 24px;
