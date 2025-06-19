@@ -44,8 +44,6 @@ button {
   background-color: #7f867f;
   transform: scale(1.25);
 }
-
-/* Result Box */
 #result {
   font-size: 24px;
   margin-top: 20px;

@@ -12,6 +12,5 @@ function play(option) {
         result.innerHTML = "You Win!"+"<br>"+"Your choice: "+option+"<br>" +"computer choice: "+compurterChoice;
     } else {
         result.innerHTML = "You Lose!"+"<br>"+"Your choice: "+option+"<br>" +"computer choice: "+compurterChoice;
-
     }   
 }
